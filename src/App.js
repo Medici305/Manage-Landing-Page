@@ -1,0 +1,18 @@
+import React from 'react';
+import GlobalStyle from './components/GlobalStyle';
+import styled from 'styled-components';
+
+function App() {
+  return (
+    <div className="App">
+      <GlobalStyle />
+      <Text>Welcome</Text>
+    </div>
+  );
+}
+
+const Text = styled.h1`
+  color: #fff;
+`
+
+export default App;
