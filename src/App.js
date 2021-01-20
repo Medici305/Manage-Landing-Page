@@ -2,19 +2,18 @@ import React from 'react';
 import GlobalStyle from './components/GlobalStyle';
 import styled from 'styled-components';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Text>Welcome</Text>
+      <Nav />
+      <Home />
       <Footer />
     </div>
   );
 }
-
-const Text = styled.h1`
-  color: #fff;
-`
 
 export default App;
