@@ -3,13 +3,38 @@ import GlobalStyle from './components/GlobalStyle';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Nav from './components/Nav';
+import AboutUs from './pages/AboutUs';
+import Pricing from './pages/Pricing';
+import Careers from './pages/Careers';
+import Product from './pages/Product';
+import ContactUs from './pages/ContactUs';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Home />
+      <Switch>
+        <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/pricing'>
+          <Pricing />
+        </Route>
+        <Route path='/product'>
+          <Product />
+        </Route>
+        <Route path='/about-us'>
+          <AboutUs />
+        </Route>
+        <Route path='/careers'>
+          <Careers />
+        </Route>
+        <Route path='/contact-us'>
+          <ContactUs />
+        </Route>
+      </Switch>
       <Footer />
     </div>
   );
