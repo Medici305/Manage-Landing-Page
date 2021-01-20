@@ -13,9 +13,9 @@ const BetterProduct = () => {
                     to plan day-to-day tasks while keeping the
                     larger team goals in view.
                 </p>
-                <Button2>
+                <Button3>
                     Get Started
-                </Button2>
+                </Button3>
             </Container>
             <Container>
                 <img src={illustration} alt="diagram" />
@@ -52,5 +52,10 @@ const Container = styled.div`
         object-fit: cover;
     }
 `;
+
+const Button3 = styled(Button2)`
+    margin: 1rem 0rem;
+`;
+
 
 export default BetterProduct;
