@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Title } from '../Styles';
 
 const Difference = () => {
     return (
@@ -86,13 +87,6 @@ const Text = styled.p`
 
 const Card = styled.div`
     display: flex;
-`;
-
-const Title = styled.p`
-    color: hsl(228, 39%, 23%);
-    padding-bottom: 0rem;
-    padding-top: .3rem;
-    font-weight: 700;
 `;
 
 const Number = styled.div`

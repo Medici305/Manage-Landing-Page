@@ -67,3 +67,10 @@ export const Button2 = styled(Button)`
         color: #fff;
     }
 `;
+
+export const Title = styled.p`
+color: hsl(228, 39%, 23%);
+padding-bottom: 0rem;
+padding-top: .3zrem;
+font-weight: 700;
+`;

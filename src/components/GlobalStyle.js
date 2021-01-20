@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: black;
         font-family: 'Be Vietnam', sans-serif;
     }
 
@@ -18,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 1rem 0rem;
         line-height: 2rem;
     }
-    
+
     h3 {
         font-size: 2.7rem;
         color: hsl(228, 39%, 23%);
