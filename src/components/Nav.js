@@ -12,7 +12,7 @@ const Nav = () => {
                 <li>Product</li>
                 <li>About Us</li>
                 <li>Careers</li>
-                <li>Community</li>
+                <li>Contact Us</li>
             </nav>
             <Button2>
                 Get Started
@@ -34,6 +34,7 @@ const StyleNav = styled.div`
         display: flex;
         li {
             margin: 0rem 1rem;
+            font-weight: 700;
             cursor: pointer;
             color: hsl(228, 39%, 23%);
             &:hover {

@@ -33,7 +33,7 @@ const Footer = () => {
             <Box>
                 <InnerBox>
                     <li>Careers</li>
-                    <li>Community</li>
+                    <li>Contact Us</li>
                     <li>Privacy Policy</li>
                 </InnerBox>
                 <InnerBox2>

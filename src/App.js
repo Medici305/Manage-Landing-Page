@@ -1,6 +1,5 @@
 import React from 'react';
 import GlobalStyle from './components/GlobalStyle';
-import styled from 'styled-components';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Nav from './components/Nav';
