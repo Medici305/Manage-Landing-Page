@@ -1,5 +1,6 @@
 import React from 'react';
 import GlobalStyle from './components/GlobalStyle';
+import Advert from './components/Advert';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Nav from './components/Nav';
@@ -35,6 +36,7 @@ function App() {
           <ContactUs />
         </Route>
       </Switch>
+      <Advert />
       <Footer />
     </div>
   );

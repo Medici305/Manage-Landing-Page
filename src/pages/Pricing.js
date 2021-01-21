@@ -62,20 +62,18 @@ const Cards = styled.div`
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 2rem;
+    margin: 4rem 0rem 2rem 0rem;
 `;
 
 const Card = styled.div`
-    //border: 2px solid hsl(0, 0%, 98%);
     text-align: center;
     flex: 0.25;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    //background: hsl(228, 39%, 23%);
-    //box-shadow: 0 10px 10px -5px; 
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    box-shadow: 5px 5px 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding-bottom: 3rem;
     h4 {
         padding: 2rem 0rem;
         font-size: 1.5rem;

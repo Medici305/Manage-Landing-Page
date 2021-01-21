@@ -76,10 +76,6 @@ const FaqStyle = styled.div`
     flex-direction: column;
     padding: 4rem 10rem;
     align-items: center;
-    h1 {
-        color: hsl(228, 39%, 23%);
-        font-size: 3rem;
-    }
 `;
 
 const Text = styled.p`

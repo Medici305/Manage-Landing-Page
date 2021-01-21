@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
         line-height: 2rem;
     }
 
+    h1 {
+        color: hsl(228, 39%, 23%);
+        font-size: 3rem;
+    }
+
     h3 {
         font-size: 2.7rem;
         color: hsl(228, 39%, 23%);

@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button2 } from '../Styles';
 import illustration from '../images/illustration-intro.svg';
+import Typing from 'react-typing-animation';
 
 const BetterProduct = () => {
     return (
         <Product>
             <Container>
-                <h2>Bring everyone together to build better products.</h2>
+                <Typing>
+                    <h2>Bring everyone together to build better products.</h2>
+                </Typing>
                 <p>
                     Manage makes it simple for software teams
                     to plan day-to-day tasks while keeping the
@@ -26,7 +29,6 @@ const BetterProduct = () => {
 
 const Product = styled.div`
     height: 80vh;
-    background: #fff;
     padding: 4rem 10rem;
     display: flex;
 `;

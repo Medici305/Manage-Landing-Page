@@ -69,16 +69,15 @@ export const Button2 = styled(Button)`
 `;
 
 export const Title = styled.p`
-color: hsl(228, 39%, 23%);
-padding-bottom: 0rem;
-padding-top: .3zrem;
-font-weight: 700;
+    color: hsl(228, 39%, 23%);
+    padding-bottom: 0rem;
+    padding-top: .3zrem;
+    font-weight: 700;
 `;
 
 export const Line = styled.div`
-height: .2rem;
-margin: 1rem 0rem;
-width: 100%;
-background: hsl(228, 39%, 23%);
-
+    height: .2rem;
+    margin: 1rem 0rem;
+    width: 80rem;
+    background: hsl(228, 39%, 23%);
 `;

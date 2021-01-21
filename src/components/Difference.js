@@ -64,7 +64,6 @@ const Difference = () => {
 
 const Different = styled.div`
     height: 110vh;
-    background: #fff;
     padding: 4rem 10rem;
     display: flex;
 `;

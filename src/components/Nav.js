@@ -42,6 +42,7 @@ const StyleNav = styled.div`
     color: #fff;
     padding: 0rem 10rem;
     background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
     nav {
         list-style: none;
         display: flex;

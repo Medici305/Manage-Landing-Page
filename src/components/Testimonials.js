@@ -45,7 +45,6 @@ const Testimonials = () => {
 
 const Testimonial = styled.div`
     min-height: 90vh;
-    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
