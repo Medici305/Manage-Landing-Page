@@ -66,12 +66,16 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-    border: 2px solid hsl(0, 0%, 98%);
+    //border: 2px solid hsl(0, 0%, 98%);
     text-align: center;
     flex: 0.25;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    box-shadow: 0 10px 10px -5px;
+    //background: hsl(228, 39%, 23%);
+    //box-shadow: 0 10px 10px -5px; 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 5px 5px 20px;
     h4 {
         padding: 2rem 0rem;
         font-size: 1.5rem;
