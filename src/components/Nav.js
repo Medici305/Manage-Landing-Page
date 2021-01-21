@@ -21,7 +21,7 @@ const Nav = () => {
                     <Link to='/about-us'>About Us</Link>
                 </li>
                 <li>
-                    <Link to='/careers'>Careers</Link>
+                    <Link to='/faq'>FAQ</Link>
                 </li>
                 <li>
                     <Link to='/contact-us'>Contact Us</Link>
@@ -49,13 +49,6 @@ const StyleNav = styled.div`
             margin: 0rem 1rem;
             font-weight: 700;
             cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-            color: hsl(228, 39%, 23%);
-            &:hover {
-                color: hsl(227, 12%, 61%);
-            }
         }
     }
 `;

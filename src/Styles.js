@@ -74,3 +74,11 @@ padding-bottom: 0rem;
 padding-top: .3zrem;
 font-weight: 700;
 `;
+
+export const Line = styled.div`
+height: .2rem;
+margin: 1rem 0rem;
+width: 100%;
+background: hsl(228, 39%, 23%);
+
+`;

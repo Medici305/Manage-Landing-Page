@@ -23,6 +23,17 @@ const GlobalStyle = createGlobalStyle`
         color: hsl(228, 39%, 23%);
         width: 80%;
     }
+    a {
+            text-decoration: none;
+            color: hsl(228, 39%, 23%);
+            &:hover {
+                color: hsl(227, 12%, 61%);
+            }
+        }
+
+    li {
+        list-style: none;
+    }
 `;
 
 

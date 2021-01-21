@@ -2,6 +2,7 @@ import React from 'react-dom';
 import styled from 'styled-components';
 import Logo from '../images/logo2.svg';
 import { Box } from '../Styles';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -24,17 +25,25 @@ const Footer = () => {
                     </div>
                 </InnerBox>
                 <InnerBox>
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
+                    <li>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link to='/pricing'>Pricing</Link>
+                    </li>
+                    <li>
+                        <Link to='/product'>Product</Link>
+                    </li>
+                    <li>
+                        <Link to='/about-us'>About Us</Link>
+                    </li>
                 </InnerBox>
             </Box>
             <Box>
                 <InnerBox>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
-                    <li>Privacy Policy</li>
+                    <Link to='/faq'>FAQ</Link>
+                    <Link to='/contact-us'>Contact Us</Link>
+                    <Link to=''>Privacy Policy</Link>
                 </InnerBox>
                 <InnerBox2>
                     <div className="search-bar">
@@ -62,9 +71,8 @@ const InnerBox = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    li {
-        list-style: none;
-        text-align: center;
+    a {
+        color: #fff;
         cursor: pointer;
         &:hover {
             color: hsl(12, 88%, 59%);

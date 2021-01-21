@@ -73,10 +73,13 @@ const Card = styled.div`
     border-bottom-right-radius: 1rem;
     box-shadow: 0 10px 10px -5px;
     h4 {
-        background: #aaabb1;
         padding: 2rem 0rem;
         font-size: 1.5rem;
         font-weight: 700;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        background: hsl(12, 88%, 59%);
+        color: #fff;
     }
     h5 {
         padding: 2rem;

@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs';
 import Pricing from './pages/Pricing';
-import Careers from './pages/Careers';
+import Faq from './pages/Faq';
 import Product from './pages/Product';
 import ContactUs from './pages/ContactUs';
 import { Switch, Route } from 'react-router-dom';
@@ -28,8 +28,8 @@ function App() {
         <Route path='/about-us'>
           <AboutUs />
         </Route>
-        <Route path='/careers'>
-          <Careers />
+        <Route path='/faq'>
+          <Faq />
         </Route>
         <Route path='/contact-us'>
           <ContactUs />
