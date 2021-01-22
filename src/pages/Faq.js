@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Toggle from '../components/Toggle';
-
+import { motion } from 'framer-motion';
+import { PageTransition } from '../Animation';
 
 const Faq = () => {
     return (
-        <FaqStyle>
+        <FaqStyle exit='exit' variants={PageTransition} initial='hidden' animate='show'>
             <h1>FAQ</h1>
             <Text>
                 We want you to have the simplest,
@@ -70,7 +71,7 @@ const Faq = () => {
     )
 }
 
-const FaqStyle = styled.div`
+const FaqStyle = styled(motion.div)`
     min-height: 100vh;
     display: flex;
     flex-direction: column;

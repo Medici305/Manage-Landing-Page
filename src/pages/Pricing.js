@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { PageTransition } from '../Animation';
 
 const Pricing = () => {
     return (
-        <Price>
+        <Price exit='exit' variants={PageTransition} initial='hidden' animate='show'>
             <h3>Pricing</h3>
             <p>
                 Quickly build an effective pricing table for your
@@ -41,7 +43,7 @@ const Pricing = () => {
     )
 }
 
-const Price = styled.div`
+const Price = styled(motion.div)`
     min-height: 80vh;
     padding: 4rem 10rem;
     display: flex;
@@ -74,6 +76,10 @@ const Card = styled.div`
     border-top-right-radius: 1rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     padding-bottom: 3rem;
+    transition: all .3s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 10px 5px #a2a2b6;
+    }
     h4 {
         padding: 2rem 0rem;
         font-size: 1.5rem;

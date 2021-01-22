@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import { motion } from 'framer-motion';
+import { PageTransition } from '../Animation';
 
 const ContactUs = () => {
     return (
-        <FormStyled>
+        <FormStyled exit='exit' variants={PageTransition} initial='hidden' animate='show'>
             <FormBox noValidate autoComplete="off">
                 <h1>Ask A Question</h1>
                 <p>For pre-sale and general questions, please use the form below</p>
@@ -27,7 +29,7 @@ const ContactUs = () => {
     )
 }
 
-const FormStyled = styled.div`
+const FormStyled = styled(motion.div)`
     min-height: 90vh;
     display: flex;
     flex-direction: column;
