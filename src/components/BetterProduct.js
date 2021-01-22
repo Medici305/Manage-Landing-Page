@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button2 } from '../Styles';
 import illustration from '../images/illustration-intro.svg';
 import { titleAnim, fade, photoAnim } from '../Animation';
 import { motion } from 'framer-motion';
