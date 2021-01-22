@@ -1,31 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { motion } from 'framer-motion';
 import { PageTransition } from '../Animation';
-import Typing from 'react-typing-animation';
+import firebase from '../Firebase';
+
 
 const ContactUs = () => {
+    // State
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    // const [nameError, setNameError] = useState({});
+    // const [emailError, setEmailError] = useState({});
+    // Function
+    const submitHandler = (e) => {
+        e.preventDefault();
+        //const isValid = formValidation();
+        firebase.firestore().collection('contacts').add({
+            name: name,
+            email: email,
+            message: message
+        })
+            .then(() => {
+                alert('Message has been submitted');
+            })
+            .catch((error) => {
+                alert(error.message)
+            })
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
+
+    // const formValidation = () => {
+    //     const nameError = {};
+    //     //const emailError = {};
+    //     let isValid = true;
+
+    //     if (!nameError.trim()) {
+    //         nameError.blankName = 'Name can\'t be blank';
+    //         isValid = false;
+    //     }
+
+    //     // if (!emailError) {
+    //     //     emailError.blankName = 'Email can\'t be blank';
+    //     //     isValid = false;
+    //     // } else if (!/^[A-Z0-9._%+=]+@[a-z0-9.-]+\.[A-Z]{2,}$/i.test(emailError)) {
+    //     //     emailError.atSymbol = 'Email Address is Invalid';
+    //     // }
+
+    //     setNameError(nameError);
+    //     //setEmailError(emailError);
+    //     return isValid;
+    // }
     return (
         <FormStyled exit='exit' variants={PageTransition} initial='hidden' animate='show'>
             <FormBox noValidate autoComplete="off">
                 <h1>Ask A Question</h1>
-                <Typing speed={-1}>
-                    <Typing.Delay ms={100} />
-                    <p>For pre-sale and general questions, please use the form below</p>
-                </Typing>
+                <p>For pre-sale and general questions, please use the form below</p>
                 <StyleInput>
-                    <TextField style={styleInput} id="name" label="Name" variant="outlined" />
-                    <TextField style={styleInput2} id="email" label="Email" variant="outlined" />
+                    <TextField onChange={(e) => setName(e.target.value)} value={name} style={styleInput} id="name" label="Name" variant="outlined" />
+                    <TextField onChange={(e) => setEmail(e.target.value)} value={email} style={styleInput2} id="email" label="Email" variant="outlined" />
                 </StyleInput>
                 <TextArea
+                    onChange={(e) => setMessage(e.target.value)}
+                    value={message}
                     id="text-area"
                     label="Enter Your Message"
                     multiline
                     variant="outlined"
                 />
-                <Button style={styleButton} variant="contained">
+                <Button onClick={submitHandler} type='submit' style={styleButton} variant="contained">
                     Submit
                 </Button>
             </FormBox>
