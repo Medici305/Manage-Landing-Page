@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { PageTransition } from '../Animation';
+import { PageTransition, fade } from '../Animation';
 import { Link } from 'react-router-dom';
 
 

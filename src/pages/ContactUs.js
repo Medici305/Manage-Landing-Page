@@ -4,13 +4,17 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { motion } from 'framer-motion';
 import { PageTransition } from '../Animation';
+import Typing from 'react-typing-animation';
 
 const ContactUs = () => {
     return (
         <FormStyled exit='exit' variants={PageTransition} initial='hidden' animate='show'>
             <FormBox noValidate autoComplete="off">
                 <h1>Ask A Question</h1>
-                <p>For pre-sale and general questions, please use the form below</p>
+                <Typing speed={-1}>
+                    <Typing.Delay ms={100} />
+                    <p>For pre-sale and general questions, please use the form below</p>
+                </Typing>
                 <StyleInput>
                     <TextField style={styleInput} id="name" label="Name" variant="outlined" />
                     <TextField style={styleInput2} id="email" label="Email" variant="outlined" />
