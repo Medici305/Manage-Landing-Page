@@ -16,7 +16,7 @@ export const PageTransition = {
         opacity: 0,
         y: 300,
         transition: {
-            duration: 1
+            duration: .5
         }
     }
 }
