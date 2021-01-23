@@ -43,6 +43,10 @@ const StyleNav = styled.div`
     padding: 0rem 10rem;
     background: #fff;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    @media (max-width: 1420px) {
+        padding: 0rem 4rem;
+    }
+
     nav {
         list-style: none;
         display: flex;
@@ -50,6 +54,7 @@ const StyleNav = styled.div`
             margin: 0rem 1rem;
             font-weight: 700;
             cursor: pointer;
+            position: relative;
         }
     }
 `;

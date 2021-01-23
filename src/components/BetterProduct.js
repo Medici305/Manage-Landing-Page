@@ -37,11 +37,17 @@ const Product = styled.div`
     height: 80vh;
     padding: 4rem 10rem;
     display: flex;
+    @media (max-width: 1420px) {
+        flex-direction: column;
+        height: 140vh;
+        padding: 1rem 5rem;
+    }
 `;
 
 const Hide = styled.div`
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
+    height: 100%;
 `;
 
 const Container = styled.div`
@@ -49,6 +55,12 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @media (max-width: 1420px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1rem 0rem;
+    }
     p {
         width: 65%;
     }
@@ -56,6 +68,12 @@ const Container = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+        @media (max-width: 1420px) {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+    
+    }
     }
         
     h2 {
@@ -63,6 +81,9 @@ const Container = styled.div`
         line-height: 4rem;
         color: hsl(228, 39%, 23%);
         width: 90%;
+        @media (max-width: 1420px) {
+            width: 100%;
+        }
     }
 `;
 

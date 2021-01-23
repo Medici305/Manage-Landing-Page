@@ -62,6 +62,9 @@ const StyleFooter = styled.div`
     display: flex;
     background: hsl(233, 12%, 13%);
     padding: 0rem 10rem;
+    @media (max-width: 1420px) {
+        padding: 0rem 4rem;
+    }
 `;
 
 const InnerBox = styled.div`

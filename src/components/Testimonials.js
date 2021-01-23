@@ -50,6 +50,10 @@ const Testimonial = styled.div`
     align-items: center;
     justify-content: space-around;
     margin-bottom: 10rem;
+    @media (max-width: 1420px) {
+        overflow: hidden;
+        margin: 5rem 0rem;
+    }
     h3 {
         width: 100%;
         text-align: center;
@@ -58,12 +62,19 @@ const Testimonial = styled.div`
 
 const Cards = styled.div`
     display: flex;
+    @media (max-width: 1420px) {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
 `;
 
 const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 1420px) {
+        padding: 0rem 5rem;
+    }
     p {
         text-align: center;
     }

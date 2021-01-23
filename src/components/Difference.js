@@ -63,14 +63,29 @@ const Difference = () => {
 }
 
 const Different = styled.div`
-    height: 110vh;
-    padding: 4rem 10rem;
+    min-height: 110vh;
     display: flex;
+    @media (max-width: 1420px) {
+        min-height: 120vh;
+        padding: 0rem 5rem;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
 `;
 
 const Box = styled.div`
     flex: 1;
     margin-top: 1rem;
+    @media (max-width: 1420px) { 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3, p {
+            width: 100%;
+        }
+    }
 `;
 
 const Box2 = styled(Box)`
@@ -98,7 +113,10 @@ const Number = styled.div`
         padding: .5rem 1.5rem;
         font-weight: 700;
         margin: 0rem 1rem;
+        @media (max-width: 1420px) {
+            margin-top: 1rem;
     }
+}
 `;
 
 export default Difference;

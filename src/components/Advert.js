@@ -25,6 +25,9 @@ const StyledAvert = styled.div`
     background-color: hsl(12, 88%, 59%);
     padding: 0rem 10rem;
     display: flex;
+    @media (max-width: 1420px) {
+        padding: 0rem 4rem;
+    }
 `;
 
 const Box2 = styled(Box)`
