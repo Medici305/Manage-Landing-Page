@@ -1,16 +1,16 @@
-import React from 'react';
-import GlobalStyle from './components/GlobalStyle';
-import Advert from './components/Advert';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Nav from './components/Nav';
-import AboutUs from './pages/AboutUs';
-import Pricing from './pages/Pricing';
-import Faq from './pages/Faq';
-import Product from './pages/Product';
-import ContactUs from './pages/ContactUs';
-import { Switch, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import React from "react";
+import GlobalStyle from "./components/GlobalStyle";
+import Advert from "./components/Advert";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
+import AboutUs from "./pages/AboutUs";
+import Pricing from "./pages/Pricing";
+import Faq from "./pages/Faq";
+import Product from "./pages/Product";
+import ContactUs from "./pages/ContactUs";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
@@ -18,31 +18,31 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter >
+      <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path='/' exact>
+          <Route path="/" exact>
             <Home />
           </Route>
-          <Route path='/pricing'>
+          <Route path="/pricing">
             <Pricing />
           </Route>
-          <Route path='/product'>
+          <Route path="/product">
             <Product />
           </Route>
-          <Route path='/about-us'>
+          <Route path="/about-us">
             <AboutUs />
           </Route>
-          <Route path='/faq'>
+          <Route path="/faq">
             <Faq />
           </Route>
-          <Route path='/contact-us'>
+          <Route path="/contact-us">
             <ContactUs />
           </Route>
-        </Switch >
+        </Switch>
       </AnimatePresence>
       <Advert />
       <Footer />
-    </div >
+    </div>
   );
 }
 
