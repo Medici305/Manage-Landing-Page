@@ -26,9 +26,9 @@ const BetterProduct = () => {
                     Get Started
                 </Button3>
             </Container>
-            <Container>
+            <Container2>
                 <motion.img variants={photoAnim} src={illustration} alt="diagram" />
-            </Container>
+            </Container2>
         </Product>
     )
 }
@@ -46,6 +46,8 @@ const Product = styled.div`
         flex-direction: column-reverse;
         padding: 1rem 2rem;
         height: 110vh;
+        //border: 2px solid black;
+        margin-bottom: 2rem;
     }
 `;
 
@@ -67,7 +69,9 @@ const Container = styled.div`
         margin: 1rem 0rem;
     }
     @media (max-width: 500px) { 
-        margin: .5rem 0rem;
+        flex: .6;
+        margin: 0rem;
+        //border: 2px solid blue;
     }
     p {
         width: 65%;
@@ -100,6 +104,13 @@ const Container = styled.div`
         @media (max-width: 500px) { 
             font-size: 3rem;
         }
+    }
+`;
+
+const Container2 = styled(Container)`
+    @media (max-width: 500px) { 
+        //border: 2px solid red;
+        flex: .4;
     }
 `;
 
