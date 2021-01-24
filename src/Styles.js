@@ -71,8 +71,11 @@ export const Button2 = styled(Button)`
 export const Title = styled.p`
   color: hsl(228, 39%, 23%);
   padding-bottom: 0rem;
-  padding-top: 0.3zrem;
+  padding-top: 0.3rem;
   font-weight: 700;
+  @media (max-width: 500px) {
+      padding: 0rem;
+  }
 `;
 
 export const Line = styled.div`

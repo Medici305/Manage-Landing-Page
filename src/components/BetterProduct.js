@@ -40,7 +40,7 @@ const Product = styled.div`
     padding: 1rem 5rem;
   }
   @media (max-width: 500px) {
-    margin-top: 2rem;
+    margin-top: 4rem;
     height: 100vh;
     flex-direction: column-reverse;
     padding: 1rem 2rem;
@@ -78,6 +78,7 @@ const Container = styled.div`
       width: 90%;
       text-align: justify;
       font-size: 1rem;
+      padding: 2rem 0rem;
     }
   }
   img {
