@@ -5,29 +5,29 @@ import { titleAnim, fade, photoAnim } from "../Animation";
 import { motion } from "framer-motion";
 
 const BetterProduct = () => {
-  return (
-    <Product>
-      <Container>
-        <Hide>
-          <motion.h2 variants={titleAnim}>Bring everyone</motion.h2>
-        </Hide>
-        <Hide>
-          <motion.h2 variants={titleAnim}>together to build</motion.h2>
-        </Hide>
-        <Hide>
-          <motion.h2 variants={titleAnim}>better products.</motion.h2>
-        </Hide>
-        <motion.p variants={fade}>
-          Manage makes it simple for software teams to plan day-to-day tasks
-          while keeping the larger team goals in view.
+    return (
+        <Product>
+            <Container>
+                <Hide>
+                    <motion.h2 variants={titleAnim}>Bring everyone</motion.h2>
+                </Hide>
+                <Hide>
+                    <motion.h2 variants={titleAnim}>together to build</motion.h2>
+                </Hide>
+                <Hide>
+                    <motion.h2 variants={titleAnim}>better products.</motion.h2>
+                </Hide>
+                <motion.p variants={fade}>
+                    Manage makes it simple for software teams to plan day-to-day tasks
+                    while keeping the larger team goals in view.
         </motion.p>
-        <Button3 variants={fade}>Get Started</Button3>
-      </Container>
-      <Container2>
-        <motion.img variants={photoAnim} src={illustration} alt="diagram" />
-      </Container2>
-    </Product>
-  );
+                <Button3 variants={fade}>Get Started</Button3>
+            </Container>
+            <Container2>
+                <motion.img variants={photoAnim} src={illustration} alt="diagram" />
+            </Container2>
+        </Product>
+    );
 };
 
 const Product = styled.div`
@@ -40,9 +40,9 @@ const Product = styled.div`
     padding: 1rem 5rem;
   }
   @media (max-width: 500px) {
+    height: 115vh;
     flex-direction: column-reverse;
     padding: 1rem 2rem;
-    //border: 2px solid black;
     margin-bottom: 2rem;
   }
 `;
@@ -51,6 +51,9 @@ const Hide = styled.div`
   width: 100%;
   overflow: hidden;
   height: 100%;
+  @media (max-width: 500px) {
+      height: auto;
+  }
 `;
 
 const Container = styled.div`
@@ -67,7 +70,6 @@ const Container = styled.div`
   @media (max-width: 500px) {
     flex: 0.6;
     margin: 0rem;
-    //border: 2px solid blue;
   }
   p {
     width: 65%;
@@ -97,15 +99,18 @@ const Container = styled.div`
       width: 100%;
     }
     @media (max-width: 500px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 `;
 
 const Container2 = styled(Container)`
   @media (max-width: 500px) {
-    //border: 2px solid red;
     flex: 0.4;
+    img {
+        width: 100%;
+        height: auto;
+    }
   }
 `;
 

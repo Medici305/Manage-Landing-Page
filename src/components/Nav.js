@@ -8,7 +8,6 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
     const [active, setActive] = useState(false);
-    console.log(active);
     return (
         <StyleNav>
             <Link to="/">
@@ -78,6 +77,9 @@ const StyleNav = styled.div`
     justify-content: space-between;
     min-height: 10vh;
     padding: 0rem 2rem;
+    img {
+        margin-top: 1rem;
+    }
   }
   svg {
     display: none;
