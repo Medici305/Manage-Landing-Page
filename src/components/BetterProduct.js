@@ -42,6 +42,11 @@ const Product = styled.div`
         height: 140vh;
         padding: 1rem 5rem;
     }
+    @media (max-width: 500px) { 
+        flex-direction: column-reverse;
+        padding: 1rem 2rem;
+        height: 110vh;
+    }
 `;
 
 const Hide = styled.div`
@@ -61,8 +66,16 @@ const Container = styled.div`
         text-align: center;
         margin: 1rem 0rem;
     }
+    @media (max-width: 500px) { 
+        margin: .5rem 0rem;
+    }
     p {
         width: 65%;
+        @media (max-width: 500px) { 
+            width: 90%;
+            text-align: justify;
+            font-size: 1rem;
+        }
     }
     img {
         width: 100%;
@@ -73,7 +86,7 @@ const Container = styled.div`
             height: auto;
             object-fit: cover;
     
-    }
+        }
     }
         
     h2 {
@@ -83,6 +96,9 @@ const Container = styled.div`
         width: 90%;
         @media (max-width: 1420px) {
             width: 100%;
+        }
+        @media (max-width: 500px) { 
+            font-size: 3rem;
         }
     }
 `;

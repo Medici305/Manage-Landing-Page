@@ -49,10 +49,13 @@ const StyleNav = styled.div`
     @media (max-width: 1420px) { 
         flex-direction: column;
         justify-content: space-around;
+        padding: 0rem 4rem;
     }
     @media (max-width: 500px) { 
         flex-direction: row;
         justify-content: space-between;
+        min-height: 10vh;
+        padding: 0rem 2rem;
     }
     svg {
         display: none;
@@ -61,11 +64,7 @@ const StyleNav = styled.div`
             font-size: 1.5rem;
             color: hsl(228, 39%, 23%);
             cursor: pointer;
-
         }
-    }
-    @media (max-width: 1420px) {
-        padding: 0rem 4rem;
     }
     nav {
         list-style: none;
