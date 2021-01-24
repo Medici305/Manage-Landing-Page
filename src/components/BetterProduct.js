@@ -45,7 +45,6 @@ const Product = styled.div`
     @media (max-width: 500px) { 
         flex-direction: column-reverse;
         padding: 1rem 2rem;
-        height: 110vh;
         //border: 2px solid black;
         margin-bottom: 2rem;
     }
