@@ -49,7 +49,7 @@ const Testimonial = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
     @media (max-width: 1420px) {
         overflow: hidden;
         margin: 5rem 0rem;

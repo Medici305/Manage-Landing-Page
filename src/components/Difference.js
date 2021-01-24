@@ -65,6 +65,7 @@ const Difference = () => {
 const Different = styled.div`
     min-height: 110vh;
     display: flex;
+    padding: 4rem 10rem;
     @media (max-width: 1420px) {
         min-height: 120vh;
         padding: 0rem 5rem;
