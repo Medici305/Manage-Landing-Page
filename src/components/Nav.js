@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Logo from '../images/logo.svg';
 import { Button2 } from '../Styles';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
     return (
@@ -27,9 +29,10 @@ const Nav = () => {
                     <Link to='/contact-us'>Contact Us</Link>
                 </li>
             </nav>
-            <Button2>
+            <ButtonNav>
                 Get Started
-            </Button2>
+            </ButtonNav>
+            <FontAwesomeIcon icon={faBars} />
         </StyleNav>
     )
 }
@@ -43,10 +46,27 @@ const StyleNav = styled.div`
     padding: 0rem 10rem;
     background: #fff;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    @media (max-width: 1420px) { 
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    @media (max-width: 500px) { 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    svg {
+        display: none;
+        @media (max-width: 500px) {
+            display: flex;
+            font-size: 1.5rem;
+            color: hsl(228, 39%, 23%);
+            cursor: pointer;
+
+        }
+    }
     @media (max-width: 1420px) {
         padding: 0rem 4rem;
     }
-
     nav {
         list-style: none;
         display: flex;
@@ -56,7 +76,17 @@ const StyleNav = styled.div`
             cursor: pointer;
             position: relative;
         }
+        @media (max-width: 500px) { 
+            display: none;
+        }
     }
 `;
+
+const ButtonNav = styled(Button2)`
+    @media (max-width: 1420px) { 
+        display: none;
+    }
+`;
+
 
 export default Nav;
