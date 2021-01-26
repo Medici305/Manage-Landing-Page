@@ -5,13 +5,13 @@ import Ali from "../images/avatar-ali.png";
 import Anisha from "../images/avatar-anisha.png";
 import Richard from "../images/avatar-richard.png";
 import { motion } from 'framer-motion';
-import { scrollReveal } from '../Animation';
+import { fade } from '../Animation';
 import { useScroll } from './useScroll';
 
 const Testimonials = () => {
     const [element, control] = useScroll();
     return (
-        <Testimonial variants={scrollReveal} ref={element} initial='hidden' animate={control}>
+        <Testimonial variants={fade} ref={element} animate={control} initial='hidden'>
             <h3>What they've said</h3>
             <Cards>
                 <Card>
@@ -83,7 +83,7 @@ const Card = styled.div`
   @media (max-width: 1420px) {
     padding: 0rem 5rem;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1420px) {
     padding: 0rem 2rem;
     margin: 1rem 0rem;
   }
@@ -95,7 +95,7 @@ const Card = styled.div`
     }
   }
   img {
-    @media (max-width: 500px) {
+    @media (max-width: 1420px) {
       margin-bottom: 1rem;
     }
   }

@@ -66,7 +66,7 @@ export const Button2 = styled(Button)`
     border: 2px solid #f08165;
     color: #fff;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1420px) {
     margin: 1rem 0rem;
   }
 `;
