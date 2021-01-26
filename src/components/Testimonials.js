@@ -75,11 +75,24 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   @media (max-width: 1420px) {
     padding: 0rem 5rem;
   }
+  @media (max-width: 500px) {
+    padding: 0rem 2rem;
+  }
   p {
     text-align: center;
+    padding: 0rem;
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+  }
+  img {
+    @media (max-width: 500px) {
+      margin-bottom: 1rem;
+    }
   }
 `;
 

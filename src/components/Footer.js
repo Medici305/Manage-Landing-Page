@@ -10,55 +10,55 @@ import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  return (
-    <StyleFooter>
-      <Container1>
-        <p>Copyright 2021. All Rights Reserved</p>
-        <img src={Logo} alt="logo" />
-        <div className="socials">
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faYoutube} />
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faPinterest} />
-          <FontAwesomeIcon icon={faInstagram} />
-        </div>
-      </Container1>
-      <MidBox>
-        <NavLink>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/pricing">Pricing</Link>
-          </li>
-          <li>
-            <Link to="/product">Product</Link>
-          </li>
-          <li>
-            <Link to="/about-us">About Us</Link>
-          </li>
-        </NavLink>
-        <NavLink>
-          <li>
-            <Link to="/faq">FAQ</Link>
-          </li>
-          <li>
-            <Link to="/contact-us">Contact Us</Link>
-          </li>
-          <li>
-            <Link to="">Privacy Policy</Link>
-          </li>
-        </NavLink>
-      </MidBox>
-      <Container2>
-        <div className="search-bar">
-          <input type="text" placeholder="Enter Email" />
-          <button>Go</button>
-        </div>
-        <p>Copyright 2021. All Rights Reserved</p>
-      </Container2>
-    </StyleFooter>
-  );
+    return (
+        <StyleFooter>
+            <Container1>
+                <p>Copyright 2021. All Rights Reserved</p>
+                <img src={Logo} alt="logo" />
+                <div className="socials">
+                    <FontAwesomeIcon icon={faFacebook} />
+                    <FontAwesomeIcon icon={faYoutube} />
+                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faPinterest} />
+                    <FontAwesomeIcon icon={faInstagram} />
+                </div>
+            </Container1>
+            <MidBox>
+                <NavLink>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/pricing">Pricing</Link>
+                    </li>
+                    <li>
+                        <Link to="/product">Product</Link>
+                    </li>
+                    <li>
+                        <Link to="/about-us">About Us</Link>
+                    </li>
+                </NavLink>
+                <NavLink>
+                    <li>
+                        <Link to="/faq">FAQ</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact-us">Contact Us</Link>
+                    </li>
+                    <li>
+                        <Link to="">Privacy Policy</Link>
+                    </li>
+                </NavLink>
+            </MidBox>
+            <Container2>
+                <div className="search-bar">
+                    <input type="text" placeholder="Enter Email" />
+                    <button>Go</button>
+                </div>
+                <p>Copyright 2021. All Rights Reserved</p>
+            </Container2>
+        </StyleFooter>
+    );
 };
 
 const StyleFooter = styled.div`
@@ -70,6 +70,9 @@ const StyleFooter = styled.div`
     min-height: 70vh;
     flex-direction: column-reverse;
     padding: 1rem 5rem;
+  }
+  @media (max-width: 500px) {
+    padding: 1rem;
   }
 `;
 
@@ -87,6 +90,7 @@ const Container1 = styled.div`
     &:hover {
       color: hsl(12, 88%, 59%);
     }
+    
   }
   p {
     display: none;
@@ -103,6 +107,12 @@ const Container1 = styled.div`
     svg {
       font-size: 1.7rem;
       margin: 0rem 1rem;
+    }
+  }
+  @media (max-width: 500px) {
+    svg {
+        margin: 1rem;
+        font-size: 2.2rem;
     }
   }
 `;

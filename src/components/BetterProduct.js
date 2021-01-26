@@ -40,7 +40,7 @@ const Product = styled.div`
     padding: 1rem 5rem;
   }
   @media (max-width: 500px) {
-    margin-top: 4rem;
+    margin-top: 3rem;
     height: 100vh;
     flex-direction: column-reverse;
     padding: 1rem 2rem;

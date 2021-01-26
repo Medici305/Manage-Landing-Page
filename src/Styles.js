@@ -66,6 +66,9 @@ export const Button2 = styled(Button)`
     border: 2px solid #f08165;
     color: #fff;
   }
+  @media (max-width: 500px) {
+    margin: 1rem 0rem;
+  }
 `;
 
 export const Title = styled.p`
