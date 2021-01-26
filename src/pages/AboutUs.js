@@ -49,6 +49,9 @@ const StyledAbout = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   padding: 4rem 10rem;
+  @media (max-width: 500px) {
+    padding: 2rem;
+  }
 `;
 
 const Title = styled.span`

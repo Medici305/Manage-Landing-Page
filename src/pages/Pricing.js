@@ -69,10 +69,11 @@ const Price = styled(motion.div)`
     text-align: center;
   }
   @media (max-width: 500px) {
-    padding: 2rem 2rem;
+    padding: 2rem;
     margin-bottom: 0rem;
     p {
       width: 100%;
+      margin-top: 1rem;
     }
   }
 `;
