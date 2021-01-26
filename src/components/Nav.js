@@ -120,7 +120,7 @@ const Menu = styled.div`
     left: 0;
     height: 100vh;
     width: 80%;
-    background: #bbbaba;
+    background: #ececec;
     z-index: 5;
     transform: ${({ active }) =>
         active ? "translateX(0%)" : "translateX(-100%)"};
@@ -149,6 +149,8 @@ const DropDown = styled.div`
             padding: 2rem 0rem;
             font-weight: 500;
             transition: all .3 ease;
+            border-bottom: 4px solid hsl(227, 12%, 61%);
+            border-radius: 10%;
             a {
                     &:hover {
                     color: #fff;

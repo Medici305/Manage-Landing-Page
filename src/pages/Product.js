@@ -166,10 +166,14 @@ const Head = styled.div`
     border-radius: 50%;
     padding: 1rem 0rem;
   }
+
 `;
 
 const Name = styled.h2`
   color: #fff;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 export default Product;
