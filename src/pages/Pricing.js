@@ -68,9 +68,12 @@ const Price = styled(motion.div)`
     width: 70%;
     text-align: center;
   }
+  @media (max-width: 1420px) {
+    padding: 4rem 5rem;
+    margin-bottom: 0rem;
+  }
   @media (max-width: 500px) {
     padding: 2rem;
-    margin-bottom: 0rem;
     p {
       width: 100%;
       margin-top: 1rem;
@@ -83,6 +86,9 @@ const Cards = styled.div`
   justify-content: space-around;
   width: 100%;
   margin: 4rem 0rem 2rem 0rem;
+  @media (max-width: 1420px) {
+    flex-wrap: wrap;
+  }
   @media (max-width: 500px) {
     flex-direction: column;
   }
@@ -122,7 +128,8 @@ const Card = styled.div`
     text-align: center;
     width: 100%;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1420px) {
+    flex-wrap: wrap;
     margin-bottom: 2rem;
   }
 `;

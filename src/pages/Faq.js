@@ -107,6 +107,9 @@ const FaqStyle = styled(motion.div)`
   flex-direction: column;
   padding: 4rem 10rem;
   align-items: center;
+  @media (max-width: 1420px) {
+    padding: 2rem 5rem;
+  }
   @media (max-width: 500px) {
     padding: 2rem;
   }
@@ -116,8 +119,8 @@ const Text = styled.p`
   width: 70%;
   text-align: center;
   margin-bottom: 3rem;
-  @media (max-width: 500px) {
-    width: 100%
+  @media (max-width: 1420px) {
+    width: 100%;
   }
 `;
 

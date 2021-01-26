@@ -15,7 +15,7 @@ const Toggle = ({ children, title }) => {
 
 const StyledToggle = styled.div`
   margin: 1rem 0rem;
-  @media (max-width: 500px) {
+  @media (max-width: 1420px) {
     width: 100%;
   }
 `;

@@ -116,9 +116,12 @@ const FormStyled = styled(motion.div)`
   p {
     margin-bottom: 2rem;
   }
+  @media (max-width: 1420px) {
+    padding: 2rem 5rem;
+    margin: 2rem 0rem;
+  }
   @media (max-width: 500px) {
     padding: 2rem;
-    margin: 2rem 0rem;
   }
 `;
 
@@ -131,7 +134,7 @@ const FormBox = styled.div`
   border: 3px solid #e7e8ec;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  @media (max-width: 500px) {
+  @media (max-width: 1420px) {
     width: 100%;
   }
 `;
@@ -139,11 +142,8 @@ const FormBox = styled.div`
 const StyleInput = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 500px) {
-    flex-direction: column;
-    //border: 2px solid blue;
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
+  flex-direction: column;
 `;
 
 const TextArea = styled(TextField)`
@@ -153,6 +153,7 @@ const styleButton = {
     background: "hsl(12, 88%, 59%)",
     color: "#fff",
     margin: "2rem 0rem",
+    padding: "1rem 0rem"
 };
 
 export default ContactUs;

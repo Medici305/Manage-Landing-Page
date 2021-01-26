@@ -86,7 +86,7 @@ export const Line = styled.div`
   margin: 1rem 0rem;
   width: 80rem;
   background: hsl(228, 39%, 23%);
-  @media (max-width: 500px) {
+  @media (max-width: 1420px) {
     width: 100%;
   }
 `;
