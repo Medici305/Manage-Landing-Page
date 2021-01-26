@@ -63,3 +63,22 @@ export const photoAnim = {
         }
     }
 }
+
+export const scrollReveal = {
+    hidden: {
+        opacity: 0,
+        scale: 1.2,
+        transition: {
+            duration: .5,
+            ease: 'anticipate'
+        }
+    },
+    show: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            duration: .5,
+            ease: 'anticipate'
+        }
+    }
+}

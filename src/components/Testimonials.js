@@ -4,10 +4,14 @@ import { Button2, Title } from "../Styles";
 import Ali from "../images/avatar-ali.png";
 import Anisha from "../images/avatar-anisha.png";
 import Richard from "../images/avatar-richard.png";
+import { motion } from 'framer-motion';
+import { scrollReveal } from '../Animation';
+import { useScroll } from './useScroll';
 
 const Testimonials = () => {
+    const [element, control] = useScroll();
     return (
-        <Testimonial>
+        <Testimonial variants={scrollReveal} ref={element} initial='hidden' animate={control}>
             <h3>What they've said</h3>
             <Cards>
                 <Card>
@@ -43,7 +47,7 @@ const Testimonials = () => {
     );
 };
 
-const Testimonial = styled.div`
+const Testimonial = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   flex-direction: column;

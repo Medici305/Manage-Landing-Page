@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../Styles";
+import { motion } from 'framer-motion';
+import { scrollReveal } from '../Animation';
+import { useScroll } from './useScroll';
 
 const Difference = () => {
+    const [element, control] = useScroll();
     return (
-        <Different>
+        <Different variants={scrollReveal} ref={element} animate={control} initial='hidden'>
             <Box>
                 <h3>What's different about Manage?</h3>
                 <Text>
@@ -58,7 +62,7 @@ const Difference = () => {
     );
 };
 
-const Different = styled.div`
+const Different = styled(motion.div)`
   min-height: 110vh;
   display: flex;
   padding: 4rem 10rem;
