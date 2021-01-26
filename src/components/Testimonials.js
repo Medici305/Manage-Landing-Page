@@ -55,7 +55,7 @@ const Testimonial = styled.div`
     margin: 5rem 0rem;
   }
   @media (max-width: 500px) {
-    margin: 4rem 0rem;
+    margin: 5rem 0rem;
   }
   h3 {
     width: 100%;
@@ -81,6 +81,7 @@ const Card = styled.div`
   }
   @media (max-width: 500px) {
     padding: 0rem 2rem;
+    margin: 1rem 0rem;
   }
   p {
     text-align: center;
